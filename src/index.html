@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stilvashia Translator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stilvashia Translator</h1>
+      <div class="translator">
+        <select id="languageSelect" class="select">
+          <option value="english_to_stilvashia">English to Stilvashia</option>
+          <option value="stilvashia_to_english">Stilvashia to English</option>
+        </select>
+        <textarea
+          id="inputText"
+          class="input"
+          placeholder="Enter text here..."
+        ></textarea>
+        <button id="translateButton" class="button">Translate</button>
+        <textarea
+          id="outputText"
+          class="output"
+          placeholder="Translated text..."
+          readonly
+        ></textarea>
+      </div>
+    </div>
+    <script type="module" src="js/translator.js"></script>
+    <script type="module" src="js/translations.js"></script>
+  </body>
+</html>
